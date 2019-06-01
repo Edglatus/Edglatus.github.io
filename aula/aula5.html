@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+	    <meta charset = "utf-8">
+	    <title>Página de Teste</title>
+</head>
+
+<body>
+	<form>
+		<fieldset>
+			<legend>Personal Information</legend>
+			<br>
+			<label for="first_name">Nome:<br></label>
+			<input type="text" name="first_name" id="first_name" autofocus required/><br><br>
+
+			<label for="country_name">País:<br></label>
+			<input type="text" name="country_name" id="country_name" list="country" autocomplete="on" /><br><br>
+
+			<label for="date_nasc">Data de Nascimento:<br></label>
+			<input type="date" name="date_nasc" id="date_nasc" required/><br><br>
+
+			<label for="tel_phone">Telefone:<br></label>
+			<input type="tel" name="tel_phone" id="tel_phone" pattern="(?=.\d).{12,12}" /><br><br>
+
+			<label for="e_mail">Email:<br></label>
+			<input type="email" name="e_mail" id="e_mail" required/><br>
+			<label for="pass_word">Senha:<br></label>
+			<input type="password" name="pass_word" id="pass_word" pattern="((?=.*\d).{1,}(?=.*\W).{1,}(?=.*\w)).{6,}" required/><br><br>
+
+			<label for="p_site">Site Pessoal:<br></label>
+			<input type="url" name="p_site" id="p_site"/><br><br>
+
+
+
+			Gênero:<br>
+			<input type="radio" name="gender" id="gM" value="male" checked> 
+			<label for="gM"> Male</label><br>
+			
+			<input type="radio" name="gender" id="gF" value="female">
+			<label for="gF"> Female</label><br>
+			
+			<input type="radio" name="gender" id="gO" value="other"> 
+			<label for="gO"> Other</label><br><br>
+
+		</fieldset>
+
+		<fieldset>
+			<legend>Operational Information</legend>
+			<br>
+			O que quer aprender?<br>
+			<input type="checkbox" name="beWM" id="lHT" value="html"> 
+			<label for="lHT"> HTML</label><br>
+
+			<input type="checkbox" name="beWM" id="lCS" value="css"> 
+			<label for="lCS"> CSS</label><br>
+
+			<input type="checkbox" name="beWM" id="lJS" value="js">
+			<label for="lJS"> JavaScript</label><br>
+
+			<input type="checkbox" name="beWM" id="lPH" value="php"/> 
+			<label for="lPH"> PHP</label><br><br>
+
+			Trabalhar como Webmaster?<br>
+			<input type="radio" name="learn" id="wY" value="yes"> 
+			<label for="wY"> Sim</label><br>
+
+			<input type="radio" name="learn" id="wN" value="no" checked>
+			<label for="wN"> Não</label><br>
+
+			<input type="radio" name="learn" id="wM" value="maybe">
+			<label for="wM"> Talvez</label><br>
+
+			<input type="radio" name="learn" id="wW" value="maybe">
+			<label for="wW"> Quem Sabe?</label><br><br>
+		</fieldset>
+
+		<fieldset>
+			<legend>Other Information</legend>
+			<br>
+			<label for="dDP">Dia de Pagamento:<br></label>
+			<select name="dDP" id="dDP" size="5" multiple="multiple">
+				<optgroup label="Round Days">
+					<option value="1">1</option>
+					<option value="10" selected>10</option>
+					<option value="20">20</option>
+				</optgroup>	
+				<optgroup label="Five-bound Days">
+					<option value="5">5</option>
+					<option value="15" selected>15</option>
+					<option value="25">25</option>
+				</optgroup>	
+			</select>
+		</fieldset>
+
+		<fieldset>
+			<legend>Bio</legend>
+
+			<textarea name="bio" rows="10" cols="100" maxlength="500" disabled="disabled" 
+			placeholder="A única área que eu acho, que vai exigir muita atenção nossa, e aí eu já aventei a hipótese de até criar um ministério. É na área de... Na área... Eu diria assim, como uma espécie de analogia com o que acontece na área agrícola."></textarea>
+
+		</fieldset>
+
+		<input type="submit">
+		<input type="reset">
+
+		<datalist id="country">
+			<option value="Afghanistan">
+			<option value="Albania">
+			<option value="Algeria">
+			<option value="Andorra">
+			<option value="Angola">
+		</datalist>
+	</form>
+
+
+</body>

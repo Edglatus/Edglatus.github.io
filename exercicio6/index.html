@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+	    <meta charset = "utf-8">
+	    <title>Formulario</title>
+</head>
+<body>
+	<form>
+		<fieldset>
+			<legend>Dados Pessoais</legend>
+
+			<label for="dp_name">Nome:</label>
+			<input type="text" name="dp_name" id="dp_name">
+			<label for="dp_surname">Sobrenome:</label>
+			<input type="text" name="dp_surname" id="dp_surname">
+			<br>
+
+
+			<label for="dp_birthDay">Nascimento:</label>
+			<input type="date" name="dp_birthDay" id="dp_birthDay">
+			<br>
+
+			<label for="dp_RG">RG:</label>
+			<input type="text" name="dp_RG" id="dp_RG">
+			<br>
+
+			<label for="dp_CPF_a">CPF:</label>
+			<input type="text" name="dp_CPF_a" id="dp_CPF_a">
+			<label for="dp_CPF_b">-</label>
+			<input type="text" name="dp_CPF_b" id="dp_CPF_b">
+		</fieldset>
+		<br>
+		<fieldset>
+			<legend>Dados de Endereço</legend>
+
+			<label for="de_rua">Rua:</label>
+			<input type="text" name="de_rua" id="de_rua">
+			<label for="de_num">Número:</label>
+			<input type="text" name="de_num" id="de_num">
+			<br>
+
+
+			<label for="de_bairro">Bairro:</label>
+			<input type="text" name="de_bairro" id="de_bairro">
+			<br>
+
+			<label for="de_rf">Estado:</label>
+			<select name="de_rf" id="de_rf">
+				<option value="1">Acre</option>
+				<option value="2">Alagoas</option>
+				<option value="3">Amapá</option>
+				<option value="4">Amazonas</option>
+				<option value="5">Bahia</option>
+				<option value="6">Ceará</option>
+				<option value="7">Espírito Santo</option>
+				<option value="8">Goiás</option>
+				<option value="9">Maranhão</option>
+				<option value="10">Mato Grosso</option>
+				<option value="11">Mato Grosso do Sul</option>
+				<option value="12">Minas Gerais</option>
+				<option value="13">Pará</option>
+				<option value="14">Paraíba</option>
+				<option value="15">Paraná</option>
+				<option value="16">Pernambuco</option>
+				<option value="17">Piauí</option>
+				<option value="18">Rio de Janeiro</option>
+				<option value="19">Rio Grande do Norte</option>
+				<option value="20">Rio Grande do Sul</option>
+				<option value="21">Rondônia</option>
+				<option value="22">Roraima</option>
+				<option value="23">Santa Catarina</option>
+				<option value="24">São Paulo</option>
+				<option value="25">Sergipe</option>
+				<option value="26">Tocantins</option>
+			</select>
+			<br>
+
+			<label for="de_cidade">Cidade:</label>
+			<input type="text" name="de_cidade" id="de_cidade">
+			<br>
+
+			<label for="de_cep_a">CEP:</label>
+			<input type="text" name="de_cep_a" id="de_cep_a">
+			<label for="de_cep_b">-</label>
+			<input type="text" name="de_cep_b" id="de_cep_b">
+		</fieldset>
+		<br>
+		<fieldset>
+			<legend>Dados de Login</legend>
+
+			<label for="dl_email">E-mail:</label>
+			<input type="email" name="dl_email" id="dl_email">
+			<br>
+
+			<label for="dl_profile_picture">Imagem de Perfil:</label>
+			<input type="file" name="dl_profile_picture" id="dl_profile_picture">
+			<br>
+
+			<label for="dl_login">Login de Usuário:</label>
+			<input type="text" name="dl_login" id="dl_login">
+			<br>
+
+			<label for="dl_pass">Senha:</label>
+			<input type="password" name="dl_pass" id="dl_pass">
+			<br>
+
+			<label for="dl_pass_confirm">Confirmar Senha:</label>
+			<input type="password" name="dl_pass_confirm" id="dl_pass_confirm">
+		</fieldset>
+		<br>
+		<fieldset>
+			<legend>Pesquisa de Interesse</legend>
+
+			Trabalhar como Webmaster?
+			<br>
+			<input type="radio" name="pi_wm" id="pi_w_Y" value="1"> 
+			<label for="pi_w_Y"> Sim</label>
+			<br>
+			<input type="radio" name="pi_wm" id="pi_w_N" value="0" checked>
+			<label for="pi_w_N"> Não</label>
+			<br>
+			<input type="radio" name="pi_wm" id="pi_w_M" value="-1">
+			<label for="pi_w_M"> Talvez</label>
+			<br>
+			<input type="radio" name="pi_wm" id="pi_w_W" value="-1">
+			<label for="pi_w_W"> Quem Sabe?</label>
+			<br><br>
+
+			O que quer aprender?
+			<br>
+			<input type="checkbox" name="pi_l" id="pi_l_html" value="1"> 
+			<label for="pi_l_html"> HTML</label>
+			<br>
+			<input type="checkbox" name="pi_l" id="pi_l_css" value="2"> 
+			<label for="pi_l_css"> CSS</label>
+			<br>
+			<input type="checkbox" name="pi_l" id="pi_l_js" value="3">
+			<label for="pi_l_js"> JavaScript</label>
+			<br>
+			<input type="checkbox" name="pi_l" id="pi_l_php" value="4"/> 
+			<label for="pi_l_php"> PHP</label>
+			<br><br>
+
+			<label for="pi_comment"> Deixe um Comentário:</label><br>
+			<textarea name="pi_comment" id="pi_comment" rows="10" cols="100" maxlength="500"
+			placeholder="A única área que eu acho, que vai exigir muita atenção nossa, e aí eu já aventei a hipótese de até criar um ministério. É na área de... Na área... Eu diria assim, como uma espécie de analogia com o que acontece na área agrícola."></textarea>
+		</fieldset>
+		<br>
+		<input type="submit" value="Enviar">
+		<input type="reset" value="Limpar">
+	</form>
+
+	<a href="../"><p>Retornar à página inicial.</p></a>
+
+</body>

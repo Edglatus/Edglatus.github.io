@@ -1,0 +1,93 @@
+.wrapper
+{
+	display: grid;
+	grid-template: auto/ 230px auto;
+}
+
+
+ul
+{
+	list-style-type: none;
+	padding-left: 10px; 
+}
+
+li
+{	
+	text-decoration: none;
+	padding-right: 0px;
+	padding-bottom: 2px;
+}
+li a
+{
+	color: black;
+	display: block;
+	min-width: 200px;
+	min-height: 30px;
+    font: bold 15px Tahoma, sans-serif;
+	background-color: gray;
+	text-decoration: none;
+	text-align: left;
+	padding-left: 5px;
+	padding-top: 15px;
+	border-style: solid;
+	border-color: gray;
+	border-width: 1px;
+}
+li a:hover 
+{
+	color: red;
+	background-color: white;
+}
+
+header
+{
+	background-color: gray;
+	color: white;
+
+	grid-column: 1/span 2;
+}
+header h1
+{
+	margin-top: 0px;
+	margin-bottom: 0px;
+	padding: 0px 0px 0px 5px;
+}
+
+footer
+{
+	background-color: gray;
+	color: white;
+	grid-column: 1/span 2;
+}
+footer p
+{
+	margin: 0px;
+	padding: 2px;
+}
+
+nav
+{
+    padding: 0px 10px 0px 0px;
+}
+
+section
+{
+	font: 12px "Tahoma", sans-serif;
+
+	color: black;
+	
+	text-align: left;
+	text-indent: 0px;
+	text-transform: none;
+	text-decoration: none;
+
+	border-left-width: 2px; 
+	border-left-style: solid;
+
+    padding: 0px 25px 50px 20px;
+}
+section h2
+{
+	margin-top: 0px;
+	padding-top: 20px;
+}

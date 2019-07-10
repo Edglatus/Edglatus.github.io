@@ -1,50 +1,56 @@
-.wrapper
+#wrapper
 {
 	display: grid;
 	grid-template: 	"head head head" auto
                  	"nav  main aside" auto
-                 	"foot  foot foot" auto
-                 	/ auto auto auto;
+                 	"foot foot foot" auto
+                 	/ auto;
 }
-
-.whats-new
+#whats-new
 {
 	display: grid;
 	grid-template: 	"head head" auto
-                 	"	a main" auto
-                 	"	. aside" auto
+                 	"cont main" auto
+                 	"cont aside" auto
                  	"foot foot" auto
-                 	/ auto auto auto;
+                 	/ auto;
 }
-
 header
 {
     grid-area: head;
 	display: grid;
-	grid-template: 	"a . b" auto
-					"a . c" auto
-					"a d d" auto
+	grid-template: 	"cont . 	top" auto
+					"cont . 	aside" auto
+					"cont foot 	foot" auto
 					/ auto;
 }
-
-header figure,.whats-new figure, header h1, header h2
+#page-footer
 {
-	grid-area: a;
+	display: grid;
+	grid-template-columns: auto auto auto;
+
+	border-top-style: solid;
+	border-top-width: 2px;
 }
 
-header form, header a 
+#whats-new figure, .header-main
 {
-	grid-area: c;
+	grid-area: cont;
+}
+
+.header-aside
+{
+	grid-area: aside;
 	text-align: right;
 }
 
 header ul
 {
-	grid-area: b;
+	grid-area: top;
 	text-align: right;
 }
 
-header li
+.inline-list li
 {
 	display: inline-block;
 	padding-right: 10px;
@@ -53,12 +59,17 @@ header li
 	border-right-width: 2px;
 }
 
+.inline-list.last-item
+{
+	border-right-style: none;
+}
+
 nav
 {
 	grid-area: nav;
 }
 
-.top-menu li
+#top-menu li
 {
 	margin-top: 10px;
 	margin-bottom: 10px;
@@ -67,24 +78,17 @@ nav
 	border-width: 2px;
 }
 
-.top-menu
-{
-    grid-area: d;
-}
-
-.sidebar
+#sidebar
 {
 	display: grid;
-	grid-row: auto auto auto;
+	grid-template-rows: auto auto auto;
 	margin-right: 20px;
 }
-.sidebar-menu
+#sidebar-menu
 {
-
-	margin-top: 0px;
 	padding-left: 0px;
 }
-.sidebar-menu li
+#sidebar-menu li
 {
 	display: block;
 	margin-top: 10px;
@@ -92,15 +96,16 @@ nav
 	border-style: solid;
 	border-width: 2px;
 }
-.most-popular ul
+
+#most-popular ul
 {
-	list-style: none;
+	list-style-type: none;
 	border-width: 2px;
 	border-style: solid;
 	background-color: #BBBEC4;
-	padding: 10px 5px 10px 5px;
+	padding: 10px 5px 10px 0px;
 }
-.most-popular li:before
+#most-popular li:before
 {
 	content: ">";
 	padding-right: 8px;
@@ -113,40 +118,83 @@ article
 	margin: 10px 5px 10px 5px;
 }
 
-main, .whats-new h2
+main, #whats-new h2
 {
     grid-area: main;
 }
 
-aside, .whats-new p
+main
+{
+	display: grid;
+	grid-template-rows:	27em 13em 13em;
+}
+
+aside, #whats-new p
 {
     grid-area: aside;
 }
 
-footer
+aside 
+{
+	display: grid;
+	grid-template-rows: 27em 13em 13em;
+	padding: 0px 0px 0px 0px;
+}
+
+#main-spotlight
+{
+	position: relative;
+	top: 15%;
+}
+#main-spotlight-text
+{
+	position: absolute;
+	top: 35%;
+	left: 18%;
+	background-color: rgba(200, 200, 200, 0.75);
+
+	padding: 5px 2px 5px 2px;
+}
+
+.small-spotlight
+{
+	display: grid;
+	grid-template: 	"a ." auto
+					"a b" auto
+					"a ." auto
+					/ 110px 150px;
+	background-color: #BBBEC4;
+	height: 110px;
+	margin: 5px 0px 5px 10px;
+	padding: 0px 0px 0px 0px;
+}
+
+.small-spotlight figure
+{
+	grid-area: a;
+	margin: 5px 5px 5px 5px;
+	padding: 0px 0px 0px 0px;
+}
+
+.small-spotlight h4
+{
+	grid-area: b;
+	margin: 5px 5px 5px 5px;
+}
+
+footer, #top-menu
 {
 	grid-area: foot;
 }
 
-footer.page-footer
-{
-	display: grid;
-	grid-template-columns: auto auto auto;
 
-	border-top-style: solid;
-	border-top-width: 2px;
-}
-footer.page-footer li
+p
 {
-	display: inline-block;
-	padding-right: 10px;
-	padding-left: 10px;
-	border-right-style: solid;
-	border-right-width: 2px;
+	padding: 2px 2px 2px 2px;
+	margin: 2px 2px 2px 2px;
 }
 
-
-header li.last-item, footer.page-footer li.last-item
+h2, h3, h4
 {
-	border-right-style: none;
+	margin: 5px 5px 5px 0px;
 }

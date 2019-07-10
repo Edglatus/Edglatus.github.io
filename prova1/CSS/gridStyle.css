@@ -1,0 +1,152 @@
+.wrapper
+{
+	display: grid;
+	grid-template: 	"head head head" auto
+                 	"nav  main aside" auto
+                 	"foot  foot foot" auto
+                 	/ auto auto auto;
+}
+
+.whats-new
+{
+	display: grid;
+	grid-template: 	"head head" auto
+                 	"	a main" auto
+                 	"	. aside" auto
+                 	"foot foot" auto
+                 	/ auto auto auto;
+}
+
+header
+{
+    grid-area: head;
+	display: grid;
+	grid-template: 	"a . b" auto
+					"a . c" auto
+					"a d d" auto
+					/ auto;
+}
+
+header figure,.whats-new figure, header h1, header h2
+{
+	grid-area: a;
+}
+
+header form, header a 
+{
+	grid-area: c;
+	text-align: right;
+}
+
+header ul
+{
+	grid-area: b;
+	text-align: right;
+}
+
+header li
+{
+	display: inline-block;
+	padding-right: 10px;
+	padding-left: 10px;
+	border-right-style: solid;
+	border-right-width: 2px;
+}
+
+nav
+{
+	grid-area: nav;
+}
+
+.top-menu li
+{
+	margin-top: 10px;
+	margin-bottom: 10px;
+	padding: 2px 50px 2px 50px;
+	border-style: solid;
+	border-width: 2px;
+}
+
+.top-menu
+{
+    grid-area: d;
+}
+
+.sidebar
+{
+	display: grid;
+	grid-row: auto auto auto;
+	margin-right: 20px;
+}
+.sidebar-menu
+{
+
+	margin-top: 0px;
+	padding-left: 0px;
+}
+.sidebar-menu li
+{
+	display: block;
+	margin-top: 10px;
+	padding: 2px 10px 2px 5px;
+	border-style: solid;
+	border-width: 2px;
+}
+.most-popular ul
+{
+	list-style: none;
+	border-width: 2px;
+	border-style: solid;
+	background-color: #BBBEC4;
+	padding: 10px 5px 10px 5px;
+}
+.most-popular li:before
+{
+	content: ">";
+	padding-right: 8px;
+}
+
+article
+{
+	background-color: #BBBEC4;
+	padding: 0px 5px 0px 5px;
+	margin: 10px 5px 10px 5px;
+}
+
+main, .whats-new h2
+{
+    grid-area: main;
+}
+
+aside, .whats-new p
+{
+    grid-area: aside;
+}
+
+footer
+{
+	grid-area: foot;
+}
+
+footer.page-footer
+{
+	display: grid;
+	grid-template-columns: auto auto auto;
+
+	border-top-style: solid;
+	border-top-width: 2px;
+}
+footer.page-footer li
+{
+	display: inline-block;
+	padding-right: 10px;
+	padding-left: 10px;
+	border-right-style: solid;
+	border-right-width: 2px;
+}
+
+
+header li.last-item, footer.page-footer li.last-item
+{
+	border-right-style: none;
+}

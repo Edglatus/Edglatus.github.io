@@ -1,10 +1,16 @@
+body
+{
+		margin-left: 5%;
+		margin-right: 5%;
+}
+
 #wrapper
 {
 	display: grid;
 	grid-template: 	"head head head" auto
                  	"nav  main aside" auto
                  	"foot foot foot" auto
-                 	/ auto;
+                 	/ 30% 40% 30%;
 }
 #whats-new
 {
@@ -22,15 +28,23 @@ header
 	grid-template: 	"cont . 	top" auto
 					"cont . 	aside" auto
 					"cont foot 	foot" auto
-					/ auto;
+					/ 30% 30% 40%;
+	margin-left: 5%;
 }
 #page-footer
 {
-	display: grid;
-	grid-template-columns: auto auto auto;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
 
 	border-top-style: solid;
 	border-top-width: 2px;
+}
+
+#page-footer ul
+{
+	margin-left: -50px;
 }
 
 #whats-new figure, .header-main
@@ -59,7 +73,7 @@ header ul
 	border-right-width: 2px;
 }
 
-.inline-list.last-item
+.inline-list .last-item
 {
 	border-right-style: none;
 }
@@ -80,13 +94,17 @@ nav
 
 #sidebar
 {
-	display: grid;
-	grid-template-rows: auto auto auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-around;
+
 	margin-right: 20px;
 }
 #sidebar-menu
 {
 	padding-left: 0px;
+	width: 60%;
 }
 #sidebar-menu li
 {
@@ -103,7 +121,7 @@ nav
 	border-width: 2px;
 	border-style: solid;
 	background-color: #BBBEC4;
-	padding: 10px 5px 10px 0px;
+	padding: 10px 5px 10px 5px;
 }
 #most-popular li:before
 {
@@ -116,6 +134,8 @@ article
 	background-color: #BBBEC4;
 	padding: 0px 5px 0px 5px;
 	margin: 10px 5px 10px 5px;
+
+	width: 90%;
 }
 
 main, #whats-new h2
@@ -125,8 +145,10 @@ main, #whats-new h2
 
 main
 {
-	display: grid;
-	grid-template-rows:	27em 13em 13em;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-around;
 }
 
 aside, #whats-new p
@@ -134,23 +156,24 @@ aside, #whats-new p
     grid-area: aside;
 }
 
-aside 
+aside
 {
-	display: grid;
-	grid-template-rows: 27em 13em 13em;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-around;
 	padding: 0px 0px 0px 0px;
 }
 
 #main-spotlight
 {
 	position: relative;
-	top: 15%;
 }
 #main-spotlight-text
 {
 	position: absolute;
-	top: 35%;
-	left: 18%;
+	bottom: 15%;
+	right: 12%;
 	background-color: rgba(200, 200, 200, 0.75);
 
 	padding: 5px 2px 5px 2px;
@@ -158,22 +181,20 @@ aside
 
 .small-spotlight
 {
-	display: grid;
-	grid-template: 	"a ." auto
-					"a b" auto
-					"a ." auto
-					/ 110px 150px;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: center;
+
+	width: 65%;
 	background-color: #BBBEC4;
 	height: 110px;
-	margin: 5px 0px 5px 10px;
-	padding: 0px 0px 0px 0px;
 }
 
 .small-spotlight figure
 {
 	grid-area: a;
 	margin: 5px 5px 5px 5px;
-	padding: 0px 0px 0px 0px;
 }
 
 .small-spotlight h4

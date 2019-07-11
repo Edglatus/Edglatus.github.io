@@ -1,7 +1,7 @@
 body
 {
-		margin-left: 5%;
-		margin-right: 5%;
+		margin-left: 2%;
+		margin-right: 2%;
 }
 
 #wrapper
@@ -10,15 +10,15 @@ body
 	grid-template: 	"head head head" auto
                  	"nav  main aside" auto
                  	"foot foot foot" auto
-                 	/ 30% 40% 30%;
+                 	/ 20% 60% 20%;
 }
-#whats-new
+article
 {
 	display: grid;
-	grid-template: 	"head head" auto
-                 	"cont main" auto
-                 	"cont aside" auto
-                 	"foot foot" auto
+	grid-template: 	"head head 	head" auto
+                 	"cont main 	aside" auto
+                 	"cont lower aside" auto
+                 	"foot foot 	aside" auto
                  	/ auto;
 }
 header
@@ -28,7 +28,7 @@ header
 	grid-template: 	"cont . 	top" auto
 					"cont . 	aside" auto
 					"cont foot 	foot" auto
-					/ 30% 30% 40%;
+					/ 30% 20% 50%;
 	margin-left: 5%;
 }
 #page-footer
@@ -98,13 +98,11 @@ nav
 	flex-direction: column;
 	align-items: center;
 	justify-content: space-around;
-
-	margin-right: 20px;
 }
 #sidebar-menu
 {
 	padding-left: 0px;
-	width: 200px;
+	min-width: 250px;
 }
 #sidebar-menu li
 {
@@ -133,7 +131,7 @@ nav
 article
 {
 	background-color: #BBBEC4;
-	padding: 0px 5px 0px 5px;
+	padding: 5px 15px 5px 5px;
 	margin: 10px 5px 10px 5px;
 
 	width: 90%;
@@ -152,9 +150,14 @@ main
 	justify-content: space-around;
 }
 
-aside, #whats-new p
+aside
 {
     grid-area: aside;
+}
+
+article p
+{
+	grid-area: lower;
 }
 
 aside
@@ -187,7 +190,7 @@ aside
 	justify-content: flex-start;
 	align-items: center;
 
-	width: 65%;
+	width: 15em;
 	background-color: #BBBEC4;
 	height: 110px;
 }
@@ -202,6 +205,32 @@ aside
 {
 	grid-area: b;
 	margin: 5px 5px 5px 5px;
+}
+
+.date-list
+{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: center;
+	margin: 0px 2% 0px 2%;
+}
+.date-list ol
+{
+	min-width: 15em;	
+	padding: 0px 2px 0px 2px;
+}
+.date-list ul
+{
+	padding: 0px 2px 0px 2px;
+}
+.date-list li
+{
+	display: table-row;
+	height: 2em;
+	max-height: 3em;
+	text-overflow: ellipsis;
 }
 
 footer, #top-menu

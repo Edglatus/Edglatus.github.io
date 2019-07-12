@@ -12,8 +12,6 @@ body
                  	"foot foot foot" auto
                  	/ 20% 60% 20%;
 }
-<<<<<<< HEAD
-=======
 article
 {
 	display: grid;
@@ -23,7 +21,6 @@ article
                  	"foot foot 	aside" auto
                  	/ auto;
 }
->>>>>>> 7487ab9ab52d744adb7619a94d50c41ec50d3f47
 header
 {
     grid-area: head;
@@ -51,15 +48,6 @@ header
 	margin-left: -50px;
 }
 
-#whats-new
-{
-	display: grid;
-	grid-template: 	"head head" auto
-                 	"cont main" auto
-                 	"cont aside" auto
-                 	"foot foot" auto
-                 	/ auto;
-}
 #whats-new figure, .header-main
 {
 	grid-area: cont;
@@ -231,7 +219,7 @@ aside
 }
 .date-list ol
 {
-	min-width: 15em;	
+	min-width: 15em;
 	padding: 0px 2px 0px 2px;
 }
 .date-list ul

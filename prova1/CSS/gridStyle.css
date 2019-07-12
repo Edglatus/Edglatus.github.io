@@ -373,7 +373,6 @@ article:hover h1, article:hover h2, .spotlight:hover h3, .spotlight:hover h4, .b
 ul
 {
 	list-style-type: none;
-    padding-inline-start: 0px;
 }
 
 input

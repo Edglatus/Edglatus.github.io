@@ -3,13 +3,17 @@ body
 	font-family: "Marcellus SC",'fallback', Helvetica, Arial, sans-serif;
 	font-style: normal;
 
-	background-color: rgba(101, 101, 101, 1);
-	background-image: url("./img/MP.jpg");
+	background-color: black;
+	background-image: url("./img/ER_WS.png");
 	background-attachment:fixed;
+	background-position: center top;
+	background-repeat: no-repeat;
+	background-size: cover;
 
 	display: flex;
 	flex-direction: column;
 	margin-bottom: 0px;
+	font-size: 12px;
 }
 
 #wrapper
@@ -18,7 +22,7 @@ body
 	grid-template:
                  	"nav  main aside" auto
                  	"foot foot foot" auto
-                 	/ auto 60% auto;
+                 	/ 25% 50% auto;
 	grid-column-gap: 0px;
 
 	margin: 0px 2% 0% 2%;
@@ -44,9 +48,9 @@ header
 {
     grid-area: head;
 	display: grid;
-	grid-template: 	"cont . 	top" auto
-					"cont . 	aside" auto
-					"cont foot 	foot" auto
+	grid-template: 	"foot 	foot 	top" auto
+					"title 	. 		aside" auto
+					"cont	. 		." auto
 					/ 30% 20% 50%;
 	margin: 0% 2% 2% 2%;
 }
@@ -61,11 +65,16 @@ header
 	background-color: rgba(51, 51, 51, 1);
 
 
-	margin: 10% 2% 0% 2%;
+	margin: 2% 2% 0% 2%;
 	border-top: solid 2px;
 }
 
-#whats-new figure, .header-main
+.header-main
+{
+	grid-area: title;
+}
+
+#whats-new figure
 {
 	grid-area: cont;
 }
@@ -91,6 +100,8 @@ header ul
 
 .buttoned-list a
 {
+	overflow: hidden;
+	text-overflow: ellipsis;
 	text-decoration: none;
 	border: solid black 3px;
 	background-color: rgba(51, 51, 51, 1);
@@ -117,17 +128,27 @@ nav
 	grid-area: nav;
 }
 
+#top-menu ul
+{
+	text-align: left;
+}
+
 #top-menu li
 {
 	display: inline-block;
 	margin-bottom: 10px;
 	text-align: center;
+	width: 20%;
+	margin-left: 10px;
 }
 
 #top-menu a
 {
 	display: block;
-	width: 200px;
+	width: 100%;
+	height: 1.2em;
+	min-width: 100px;
+	max-width: 200px;
 	padding: 2px 0px 2px 0px;
 }
 
@@ -154,6 +175,16 @@ nav
 	display: block;
 	box-sizing: content-box;
 	padding: 4px 10px 4px 5px;
+}
+#sidebar img
+{
+  	object-position: 50% 0%;
+	border: solid 2px rgba(171, 150, 111, 1);
+}
+
+#logo:hover img, #sidebar img:hover
+{
+	filter: brightness(1.5);
 }
 
 #most-popular ul
@@ -226,7 +257,7 @@ aside
 	flex-direction: column;
 	align-items: center;
 	justify-content: space-around;
-	padding: 0px 0px 0px 0px;
+	padding: 0px 15px 0px 0px;
 }
 
 #main-spotlight
@@ -251,7 +282,7 @@ aside
 	justify-content: center;
 	align-items: center;
 
-	width: 15em;
+	width: 19em;
 	background-color: rgba(51, 51, 51, 0.75);
 	height: 110px;
 }
@@ -259,6 +290,18 @@ aside
 .small-spotlight figure
 {
 	margin: 5px 5px 5px 5px;
+	background-color: rgba(0, 0, 0, 0.25);
+}
+img
+{
+	object-fit: cover;
+	transition: filter 0.5s, background 0.5s;
+}
+
+.spotlight:hover img
+{
+	filter: brightness(1.10) contrast(1.20);
+	background-color: rgba(0, 0, 0, 0.5);
 }
 
 .date-list
@@ -315,9 +358,10 @@ p
 
 h1, h2, h3, h4
 {
+	text-align: center;
 	color: rgba(220, 218, 216, 1);
 	text-shadow: 2px 2px 3px rgba(180, 178, 176, 0.5);
-	margin: 5px 5px 5px 0px;
+	margin: 5px 5px 5px 5px;
 	transition: color 0.75s, text-shadow 0.75s;
 }
 

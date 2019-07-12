@@ -12,15 +12,6 @@ body
                  	"foot foot foot" auto
                  	/ 30% 40% 30%;
 }
-#whats-new
-{
-	display: grid;
-	grid-template: 	"head head" auto
-                 	"cont main" auto
-                 	"cont aside" auto
-                 	"foot foot" auto
-                 	/ auto;
-}
 header
 {
     grid-area: head;
@@ -31,6 +22,8 @@ header
 					/ 30% 30% 40%;
 	margin-left: 5%;
 }
+
+
 #page-footer
 {
 	display: flex;
@@ -41,12 +34,20 @@ header
 	border-top-style: solid;
 	border-top-width: 2px;
 }
-
 #page-footer ul
 {
 	margin-left: -50px;
 }
 
+#whats-new
+{
+	display: grid;
+	grid-template: 	"head head" auto
+                 	"cont main" auto
+                 	"cont aside" auto
+                 	"foot foot" auto
+                 	/ auto;
+}
 #whats-new figure, .header-main
 {
 	grid-area: cont;

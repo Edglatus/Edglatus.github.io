@@ -367,7 +367,7 @@ h1, h2, h3, h4
 article:hover h1, article:hover h2, .spotlight:hover h3, .spotlight:hover h4, .buttoned-list a:hover
 {
 	color: rgba(255, 255, 255, 1);
-	text-shadow: 2px 2px 8px rgba(2000, 198, 196, 0.75);
+	text-shadow: 2px 2px 8px rgba(200, 198, 196, 0.75);
 }
 
 ul

@@ -15,6 +15,9 @@ main
 
 .subject
 {
+  display: flex;
+  flex-direction: row;
+  justify-content: baseline;
   text-align: center;
 }
 

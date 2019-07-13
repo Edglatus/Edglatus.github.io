@@ -13,6 +13,11 @@ main
   padding: margin: 0% 2% 0% 2%;
 }
 
+.subject
+{
+  text-align: center;
+}
+
 .subject ul
 {
   display: flex;

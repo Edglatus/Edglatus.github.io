@@ -1,31 +1,107 @@
+header
+{
+    text-align: center;
+}
+
+header h1, h2
+{
+    color: rgba(220, 218, 216, 1);
+}
+
 body
 {
-  display: flex;
-  flex-direction: column;
+    display: flex;
+    font-style: normal;
+    flex-direction: column;
+    font-family: "Marcellus SC",'fallback', Helvetica, Arial, sans-serif;
+
+    background-color: black;
 }
 
 main
 {
-  display: grid;
-  grid-template-columns: auto auto auto; 
-  
-  margin: 0% 3% 0% 3%;
-  padding: margin: 0% 2% 0% 2%;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+
+    background-color: rgba(50, 50, 50, 0.5);
+
+    border-top: solid 2px rgba(201, 180, 141, 1);
+    border-bottom: solid 2px rgba(201, 180, 141, 1);
+
+    border-radius: 5px;
+
+    box-shadow: 2px 2px 5px black;
+
+    margin: 0% 4% 0% 4%;
+    padding: 3% 1% 3% 1%;
 }
 
 .subject
 {
-  display: flex;
-  flex-direction: column;
-  justify-content: baseline;
-  text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+    background-color: rgba(50, 50, 50, 0.5);
+
+    margin: 5px;
+    border-radius: 5px;
+
+
+    border-top: solid 4px rgba(201, 180, 141, 1);
+    border-bottom: solid 4px rgba(201, 180, 141, 1);
+
+    box-shadow: 2px 2px 5px black;
 }
 
 .subject ul
 {
-  list-style-type: none;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 0px;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+    width: 100%;
+}
+
+.subject li
+{
+    display: inline-flex;
+    width: 100%;
+    margin: 5px;
+    justify-content: center;
+}
+
+.subject a
+{
+    color: rgba(171, 150, 111, 1);
+    text-decoration: none;
+    width: 80%;
+    padding: 5px;
+    border: solid 3px rgba(0,0,0,0);
+	transition: border-radius 0.25s, color 1s, text-shadow 1s;
+}
+
+.subject a:hover
+{
+    font-weight: bold;
+    text-decoration: none;
+    	color: rgba(255, 255, 255, 1);
+    	text-shadow: 2px 2px 8px rgba(200, 198, 196, 0.75);
+	border: solid rgba(201, 180, 141, 1) 3px;
+	border-radius: 20px;
+}
+
+h3
+{
+    width: 50%;
+    margin: 0px;
+    padding:7px 0px 2px 0px;
+    color: rgba(220, 218, 216, 1);
+    text-shadow: 2px 2px 3px rgba(180, 178, 176, 0.5);
+
+    border-bottom: solid 2px rgba(201, 180, 141, 1);
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
 }

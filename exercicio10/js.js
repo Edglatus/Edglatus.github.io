@@ -1,6 +1,7 @@
 function callPrompt()
 {
 	var input = prompt("Digite uma palavra:");
+        input = input.toLowerCase();
 
 	var inverse = input.split('').reverse().join('');
 

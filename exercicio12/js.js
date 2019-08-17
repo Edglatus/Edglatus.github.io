@@ -11,6 +11,12 @@
 	}
 }
 
+function get_key()
+{
+    if (event.keyCode == 13)
+        add_listItem();
+}
+
 function switch_light()
 {
 	if(this.src.includes("on"))
@@ -30,5 +36,6 @@ function break_light()
 }
 
 document.getElementById("submit_button").addEventListener("click", add_listItem, false);
+document.getElementById("q").addEventListener("keydown", get_key, false);
 document.getElementById("lampadinha").addEventListener("click", switch_light, false);
 document.getElementById("lampadinha").addEventListener("dblclick", break_light, false);

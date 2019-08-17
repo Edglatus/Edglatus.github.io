@@ -1,6 +1,5 @@
  function toggle_display()
 {
-	var trigger = this;
 	var target = this.previousElementSibling;
 
 	if(target.hidden == true)

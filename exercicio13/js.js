@@ -4,12 +4,12 @@
 
 	if(target.hidden == true)
 	{
-		this.innerText = "Exibir Conteúdo";
+		this.innerText = "Ocultar Conteúdo";
 		target.hidden = false;
 	}
 	else
 	{
-		this.innerText = "Ocultar Conteúdo";
+		this.innerText = "Exibir Conteúdo";
 		target.hidden = true;
 	}
 }

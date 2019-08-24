@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <title>Exercício AJAX</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="./ajax.js"></script>
+    <link rel="stylesheet" href="./style.css">
+</>
+</head>
+
+<body>
+    <header>
+        <div>
+            <h2>Pesquise um Id:</h2>
+            <input type="text" name="q" id="userval">
+            <input type="button" name="search" value="Buscar" id="search">
+        </div>
+
+        <div>
+            <h2>Ou Selecione um Usuário:</h2>
+            <select id="usernames">
+                <option value="0">Escolha um usuário</option>
+            </select>
+        </div>
+    </header>
+
+    <div id="results"></div>
+</body>
+</html>

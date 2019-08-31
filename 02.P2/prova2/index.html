@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <title>Prova 2</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="./js.js"></script>
+</>
+</head>
+
+<body>
+	<form>
+		<label for="nome_usuario">Nome:</label>
+		<input type="text" name="nome_usuario" id="nome_usuario"><br>
+		<label for="telefone_usuario">Telefone:</label>
+		<input type="text" name="telefone_usuario" id="telefone_usuario">
+		<br><br>
+
+		<label for="date_in">Data de chegada:</label>
+		<input type="date" name="date_in" id="date_in"><br>
+		<label for="date_out">Data de Saída:</label>
+		<input type="date" name="date_out" id="date_out">
+		<br><br>
+
+		<label for="n_quartos">Número de Quartos:</label><br>
+		<select id="n_quartos">
+            <option value="0" selected="selected">Escolha um número de quartos</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+        </select>
+
+        <br><br>
+
+        <div id="quartos">
+        	
+        </div>
+
+	</form>
+</body>

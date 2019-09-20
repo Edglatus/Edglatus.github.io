@@ -1,85 +1,94 @@
 <!DOCTYPE html>
 <html lang = "pt-br">
-  <head>
-    <meta name = "keywords" content = "Stuff">
-    <meta name = "description" content = "Uma descrição qualquer.">
-    <meta name = "author" content = "O Homem Macaco">
-    <meta charset = "utf-8">
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="./js.js"></script>
-    <title>Página de Teste</title>
-    <link rel="stylesheet" type="text/css" href="./style.css">
-  </head>
-  <body>
-    <header>
-      <h1>Repositório de Aulas de Hipermídia</h1>
-      <h2>Olá Mundo.</h2><br>
-    </header>
+    <head>
+        <meta name = "keywords" content = "Stuff">
+        <meta name = "description" content = "Uma descrição qualquer.">
+        <meta name = "author" content = "O Homem Macaco">
+        <meta charset = "utf-8">
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script src="./js.js"></script>
+        <title>Página de Teste</title>
+        <link rel="stylesheet" type="text/css" href="./style.css">
+    </head>
+    <body>
+        <header>
+            <h1>Repositório de Aulas de Hipermídia</h1>
+            <h2>Olá Mundo.</h2><br>
+        </header>
 
-    <main>
-        <ul id="mainMenu">
-            <li><a href="#HTML">1.HTML</a></li>
-            <li><a href="#CSS">2.CSS</a></li>
-            <li><a href="#P1">3.P1</a></li>
-            <br>
-            <li><a href="#JS">1.JavaScript</a></li>
-            <li><a href="#JQ">2.JQuery</a></li>
-            <li><a href="#P2">3.P2</a></li>
-        </ul>
+        <main>
+            <div id="mainMenu">
+                <header> <h3>Navegação</h3> </header>
+                <ul id="P1Menu">
+                    <li><a href="#HTML">HTML</a></li>
+                    <li><a href="#CSS">CSS</a></li>
+                    <li><a href="#P1">Prova 1</a></li>
+                </ul>
+                <ul>
+                    <li><a href="#JS">JavaScript</a></li>
+                    <li><a href="#JQ">JQuery</a></li>
+                    <li><a href="#P2">Prova 2</a></li>
+                </ul>
+            </div>
 
-        <div id="HTML" class="subject">
-            <h3>HTML</h3>
-            <ul>
-              <li><a href = "./01.P1/01.HTML/exercicio01">Primeiro Exercício.</a></li>
-              <li><a href = "./01.P1/01.HTML/exercicio02">Segundo Exercício: Hyperlinks</a></li>
-              <li><a href = "./01.P1/01.HTML/exercicio03">Terceiro Exercício: Imagens</a></li>
-              <li><a href = "./01.P1/01.HTML/exercicio04">Quarto Exercício: Seções</a></li>
-              <li><a href = "./01.P1/01.HTML/exercicio05">Quinto Exercício: Pesquisa</a></li>
-              <li><a href = "./01.P1/01.HTML/exercicio06">Sexto Exercício: Formulários</a></li>
-            </ul><br>
-        </div>
+            <div  id="mainFrame">
+                <iframe src=""></iframe>
+                <a id="closeFrame" href="#">X</a>
+            </div>
 
-        <div id="CSS" class="subject">
-            <h3>CSS</h3>
-            <ul>
-              <li><a href = "./01.P1/02.CSS/exercicio07">Primeiro Exercício</a></li>
-              <li><a href = "./01.P1/02.CSS/exercicio08">Segundo Exercício: Float Layout</a></li>
-              <li><a href = "./01.P1/02.CSS/exercicio09">Terceiro Exercício: Grid Layout</a></li>
-            </ul><br>
-        </div>
+            <div id="HTML" class="subject">
+                <h3>HTML</h3>
+                <ul>
+                  <li><a href = "./01.P1/01.HTML/exercicio01">Primeiro Exercício.</a></li>
+                  <li><a href = "./01.P1/01.HTML/exercicio02">Segundo Exercício: Hyperlinks</a></li>
+                  <li><a href = "./01.P1/01.HTML/exercicio03">Terceiro Exercício: Imagens</a></li>
+                  <li><a href = "./01.P1/01.HTML/exercicio04">Quarto Exercício: Seções</a></li>
+                  <li><a href = "./01.P1/01.HTML/exercicio05">Quinto Exercício: Pesquisa</a></li>
+                  <li><a href = "./01.P1/01.HTML/exercicio06">Sexto Exercício: Formulários</a></li>
+                </ul>
+            </div>
 
-        <div id="P1" class="subject">
-            <h3>Prova 1</h3>
-            <ul>
-              <li><a href = "./01.P1/prova1">Prova 1: HTML</a></li>
-              <li><a href = "./01.P1/prova1/CSS">Prova 1: CSS</a></li>
-            </ul>
-        </div>
+            <div id="CSS" class="subject">
+                <h3>CSS</h3>
+                <ul>
+                  <li><a href = "./01.P1/02.CSS/exercicio07">Primeiro Exercício</a></li>
+                  <li><a href = "./01.P1/02.CSS/exercicio08">Segundo Exercício: Float Layout</a></li>
+                  <li><a href = "./01.P1/02.CSS/exercicio09">Terceiro Exercício: Grid Layout</a></li>
+                </ul>
+            </div>
 
-        <div id="JS" class="subject">
-            <h3>JavaScript</h3>
-            <ul>
-              <li><a href = "./02.P2/01.JS/exercicio10">Primeiro Exercício: Palíndromos</a></li>
-              <li><a href = "./02.P2/01.JS/exercicio11">Segundo Exercício: <br> Datas e Validação de E-Mails</a></li>
-              <li><a href = "./02.P2/01.JS/exercicio12">Terceiro Exercício: Eventos</a></li>
-            </ul>
-        </div>
+            <div id="P1" class="subject">
+                <h3>Prova 1</h3>
+                <ul>
+                  <li><a href = "./01.P1/prova1">Prova 1: HTML</a></li>
+                  <li><a href = "./01.P1/prova1/CSS">Prova 1: CSS</a></li>
+                </ul>
+            </div>
 
-        <div id="JQ" class="subject">
-            <h3>JQuery</h3>
-            <ul>
-              <li><a href = "./02.P2/02.JQuery/exercicio13">Primeiro Exercício: Cópia de Texto</a></li>
-              <li><a href = "./02.P2/02.JQuery/exercicio14">Segundo Exercício:<br>Ocultação de Conteúdo com JQuery</a></li>
-              <li><a href = "./02.P2/02.JQuery/exercicio15">Terceiro Exercício: AJAX</a></li>
-            </ul>
-        </div>
+            <div id="JS" class="subject">
+                <h3>JavaScript</h3>
+                <ul>
+                  <li><a href = "./02.P2/01.JS/exercicio10">Primeiro Exercício: Palíndromos</a></li>
+                  <li><a href = "./02.P2/01.JS/exercicio11">Segundo Exercício: <br> Datas e Validação de E-Mails</a></li>
+                  <li><a href = "./02.P2/01.JS/exercicio12">Terceiro Exercício: Eventos</a></li>
+                </ul>
+            </div>
 
-        <div id="P2" class="subject">
-            <h3>Prova 2</h3>
-            <ul>
-              <li><a href = "./02.P2/prova2">Prova 2: Javascript</a></li>
-            </ul>
-        </div>
-    </main>
-  </body>
+            <div id="JQ" class="subject">
+                <h3>JQuery</h3>
+                <ul>
+                  <li><a href = "./02.P2/02.JQuery/exercicio13">Primeiro Exercício: Cópia de Texto</a></li>
+                  <li><a href = "./02.P2/02.JQuery/exercicio14">Segundo Exercício:<br>Ocultação de Conteúdo com JQuery</a></li>
+                  <li><a href = "./02.P2/02.JQuery/exercicio15">Terceiro Exercício: AJAX</a></li>
+                </ul>
+            </div>
+
+            <div id="P2" class="subject">
+                <h3>Prova 2</h3>
+                <ul>
+                  <li><a href = "./02.P2/prova2">Prova 2: Javascript</a></li>
+                </ul>
+            </div>
+        </main>
+    </body>
 </html>
